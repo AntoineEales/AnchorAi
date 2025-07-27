@@ -1,19 +1,13 @@
- buildscript {
-     repositories {
-         google()
-         mavenCentral()
-     }
-     dependencies {
--        classpath "com.android.tools.build:gradle:7.2.0"
-+        classpath "com.android.tools.build:gradle:7.2.0"
-+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10"    // <— add this line
-     }
- }
+// Apply plugin versions without applying them here
+plugins {
+  id 'com.android.application' version '7.2.0' apply false
+  id 'org.jetbrains.kotlin.android' version '1.6.10' apply false
+}
 
-
+// Make sure all projects can fetch dependencies
 allprojects {
-    repositories {
-        google()
-        mavenCentral()
-    }
+  repositories {
+    google()
+    mavenCentral()
+  }
 }
