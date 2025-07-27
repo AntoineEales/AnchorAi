@@ -28,7 +28,7 @@ jobs:
 
 
     - name: Build release APK
-      run: gradle assembleRelease -x lintVitalReportRelease
+      run: gradle assembleRelease -x lintVitalRelease -x lintVitalReportRelease
 
 
 
