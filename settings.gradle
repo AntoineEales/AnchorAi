@@ -1,2 +1,10 @@
+pluginManagement {
+  repositories {
+    google()             // ← this line makes Android plugins available
+    mavenCentral()
+    gradlePluginPortal()
+  }
+}
+
 rootProject.name = 'AnchorAI'
 include ':app'
